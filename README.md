@@ -1,3 +1,24 @@
+import java.util.*; 
+ class Ams
+ { 
+static public void main(String [] args) 
+{ 
+int s=0;
+ Scanner s=new Scanner(System.in); 
+System.out.println("Enter the number"); 
+int n=s.nextInt();
+ int k=n; 
+while(n>0) 
+{
+ s=s+(n%10)*(n%10)*(n%10); 
+n/=10; 
+} 
+if(k==s) 
+System.out.println("The given number "+k+" is an armstrong number"); 
+else 
+System.out.println("The given number "+k+" is not an armstrong number"); 
+}
+}
 #include <stdio.h>
 
 #include <conio.h>
